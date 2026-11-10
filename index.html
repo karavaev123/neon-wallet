@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="ru"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="theme-color" content="#07110d"><title>NEON WALLET</title>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<link rel="stylesheet" href="style.css"></head>
+<body><div class="app">
+<header><div class="brand"><span class="logo">N</span><span>NEON<span class="green">WALLET</span></span></div><div class="avatar" id="avatar">N</div></header>
+<section class="welcome"><div class="eyebrow">ВАШ ЛИЧНЫЙ КАБИНЕТ</div><h1>Добро пожаловать,<br><span id="name">пользователь</span><span class="dot">.</span></h1><p>Всё под контролем — в одном месте.</p></section>
+<div class="balances"><article class="balance rub"><div class="cardtop"><span>БАЛАНС В ₽</span><span class="currency">₽</span></div><div class="amount" id="rub">0,00 <small>₽</small></div><div class="line"><span></span></div><div class="hint">Российский рубль</div></article>
+<article class="balance usdt"><div class="cardtop"><span>БАЛАНС В USDT</span><span class="currency">₮</span></div><div class="amount" id="usdt">0,00 <small>USDT</small></div><div class="line"><span></span></div><div class="hint">Tether USD</div></article></div>
+<section class="actions"><button class="action primary" data-kind="deposit"><span class="ico">＋</span><span>Пополнить</span></button><button class="action" data-kind="withdraw"><span class="ico">↗</span><span>Вывести</span></button></section>
+<button class="cash" data-kind="cash"><span class="cashicon">▣</span><span><b>Снять наличные</b><small>Создать заявку на выдачу</small></span><span class="arrow">↗</span></button>
+<section class="history"><div class="sectiontitle">Последние операции <span>●</span></div><div id="requests" class="empty">Здесь появятся ваши заявки</div></section>
+<footer><span class="footdot"></span> Защищённое соединение <span class="version">NEON • 01</span></footer>
+</div>
+<div class="modal" id="modal"><div class="sheet"><button class="close" id="close">×</button><div class="eyebrow">НОВАЯ ОПЕРАЦИЯ</div><h2 id="modalTitle">Пополнение</h2><label>Валюта</label><div class="switch"><button class="selected" data-currency="RUB">₽ RUB</button><button data-currency="USDT">₮ USDT</button></div><label>Сумма</label><input id="amount" inputmode="decimal" placeholder="0.00"><button class="submit" id="submit">Создать заявку <span>→</span></button><p class="notice">Демо-интерфейс: заявка не переводит реальные деньги.</p></div></div>
+<div class="toast" id="toast"></div><script src="app.js"></script></body></html>
